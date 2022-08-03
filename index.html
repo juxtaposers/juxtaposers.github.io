@@ -30,30 +30,22 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #FFF;
-  padding: 0px 30px;
+  padding: 10px 10px;
 }
 
 .navbar a {
-  float: left;
+  float: center;
   display: outline;
   color: grey;
   text-align: center;
-  padding: 14px 20px;
+  padding: 40px 40px;
   text-decoration: none;
 }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
-
-/* Change color on hover */
 .navbar a:hover {
-  background-color: #100;
-  color: white;
+  color: black;
 }
 
-/* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -61,16 +53,16 @@ body {
   flex-wrap: wrap;
 }
 
-/* Main column */
 .main {
   -ms-flex: 50%; /* IE10 */
   flex: 0%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   background-color: #FFF;
-  padding: 20px;
+  padding: 40px;
 }
 
-/* Left column */
 .left {   
   -ms-flex: 50%; /* IE10 */
   flex: 20%;
@@ -79,14 +71,12 @@ body {
   padding: 20px;
 }
 
-/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background: #FFF;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 200px) {
   .left {   
     shape-margin: 50%;
@@ -94,7 +84,6 @@ body {
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
@@ -104,57 +93,58 @@ body {
 </style>
 </head>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<html>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<div class="row">
+  <div class="row">
 
-  <div class="main">
-    <br>
-    <h1>this is JUXTAPOSERS</h1> 
-    <h3>we do curations and creations.</h3>
-    <h3>anything for art.</h3>
+    <div class="main">
+      <br>
+      <h1>this is JUXTAPOSERS</h1> 
+      <h3>we do curations and creations.</h3>
+      <h3>anything for art.</h3>
+
+      <div class="main">
+        <div class="navbar">
+          <a href="/projects.html">projects</a>  
+        </div>
+          
+        <div class="navbar">
+          <a href="/journal.html">journal</a>  
+        </div>
+          
+        <div class="navbar">
+          <a href="/experiment.html">experiment</a>  
+        </div>
+        
+        <div class="navbar">
+          <a href="/playground.html">playground</a>  
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="left">
+      <centre> 
+        <a href="/index.html">
+          <img src="./JUXTAPOSERS.jpeg"  style="height:400px;"
+          alt="JUXTAPOSERS">
+        </a>
+        </centre>
+    </div>
+  </div> 
+  
+
+  <div class="footer">
+    <p>2022</p>
   </div>
 
-  <div class="left">
-    <centre> <img src="./JUXTAPOSERS.jpeg" style="height:400px;"
-      alt="JUXTAPOSERS"> </centre>
-  </div>
 
- 
-  
-
-
-</div> 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<div class="navbar">
-  <a href="projects">projects</a>  
-</div>
-  
- <div class="navbar">
-  <a href="journal">journal</a>  
-</div>
-  
-<div class="navbar">
-  <a href="experiment">experiment</a>  
-</div>
-
-
-<div class="footer">
-  <p>2022</p>
-</div>
-
-</body>
 </html>

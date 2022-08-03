@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JUXTAPOSERS</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Tahoma', sans-serif;
+  margin: 10;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: left;
+  background: #FFF;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  color: #100;
+}
+
+.header h3 {
+  font-size: 20px;
+  color: #100;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #FFF;
+  padding: 0px 0px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: outline;
+  color: grey;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 50%; /* IE10 */
+  flex: 0%;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  padding: 40px;
+  margin-left: 100px;
+}
+
+/* Right column */
+.right {   
+  -ms-flex: 50%; /* IE10 */
+  flex: 20%;
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFF;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 200px) {
+  .right {   
+    shape-margin: 50%;
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: center;
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<html> 
+    <div class="header"> 
+        <div class="left">
+            <a href="/index.html">
+            <img src="./JUXTAPOSERS.jpeg"  style="height:200px;"
+            alt="JUXTAPOSERS">
+            </a>
+    </div>
+
+
+
+    <div class="row">
+        <div class="left">
+            <div class="navbar">
+                <a href="/projects.html">back to projects</a>  
+            </div>
+            
+            <div class="navbar">
+                <a href="/index.html">reorient me (home)</a>  
+            </div>
+        </div>
+        
+        <div class="main">
+            <h1>yyz capsule</h1> 
+            <h3>a summer in eastern standard time</h3>
+        </div>
+    </div> 
+
+    <div class="row">
+        <img src="./yyz/aUniversity.jpg" style="height:400px; margin:20px"
+        alt="anova on university ave"> 
+
+        <img src="./yyz/june-stills_4.5.1.png" style="height:400px; margin:20px"
+        alt="friends and strangers of the ago"> 
+
+    </div>
+
+    <div class="row"> 
+        <img src="./yyz/june-stills_4.3.1.png" style="height:400px; margin:20px"
+        alt="ubc and gbc students take over uoft"> 
+        
+        <img src="./yyz/aInKensington.jpg" style="height:400px; margin:20px"
+        alt="anova in kensington"> 
+
+    </div>
+
+
+
+    <div class="navbar">
+        <a href="/index.html">reorient me (home)</a>  
+      </div>
+      
+      <div class="navbar">
+        <a href="/projects.html">projects</a>  
+      </div>
+        
+       <div class="navbar">
+        <a href="/journal.html">journal</a>  
+      </div>
+        
+      <div class="navbar">
+        <a href="/experiment.html">experiment</a>  
+      </div>
+      
+      <div class="navbar">
+        <a href="/playground.html">playground</a>  
+      </div>
+      
+
+
+
+    <div class="footer">
+        <p>2022</p>
+    </div>
+
+</html>
