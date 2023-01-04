@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
   <title>JUXTAPOSERS</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS" rel=" stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     * {
@@ -11,9 +12,14 @@
 
     /* Style the body */
     body {
-      font-family: "Tahoma", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: #100;
       margin: 10;
+    }
+
+    .p {
+      color: #100;
+      padding: 60px;
     }
 
     /* Header/logo Title */
@@ -65,36 +71,41 @@
 
     /* Column container */
     .row {
-      display: -ms-flexbox;
+      width: 100%;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      padding: 50px;
     }
 
     /* Main column */
     .main {
-      -ms-flex: 60%;
+      width: 60%;
       flex: 10%;
       text-align: left;
       align-items: center;
       justify-content: center;
       background-color: #fff;
-      padding: 40px;
-      margin-left: 100px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    .left {
+      width: 40%;
+      flex: 20%;
+      text-align: left;
+      align-items: left;
+      justify-content: left;
     }
 
     /* Right column */
     .right {
       width: 40%;
-      /* -ms-flex: 40%;  */
       flex: 20%;
       text-align: left;
       align-items: left;
       justify-content: left;
-      padding: 20px;
     }
 
     /* Footer */
@@ -108,21 +119,55 @@
       background-color: white;
     }
 
-    /* Responsive layout - when the screen is less than 700px wide */
-    @media screen and (max-width: 1000px) {
-      .right {
-        shape-margin: 50%;
-        flex-direction: column;
-        color: white;
+    img {
+      width: 100%; 
+      max-width: 500px;
       }
-    }
 
     /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 600px) {
+      .header h1 {
+        font-size: 60px;
+        color: #100;
+        line-height: 80%;
+      }
+      .header h3 {
+        font-size: 20px;
+        color: #100;
+        line-height: 80%;
+      }
       .navbar a {
-        float: center;
+          float: left;
+          text-align: left;
+          line-height: 80%;
+          width: 100%;
+        }
+      .row {
+        width: 100%;
+        align-items: center;
+        text-align: left;
+        padding: 20px;
+        vertical-align: center;
+      }
+      .main {
+        padding: 0px;
+      }
+      .left {
+        width: 20%;
+        font-size: x-small;
+        line-height: 3px;
+      }
+      .right {
+        padding: 0%;
+      }
+      .footer {
+        text-align: center;
+        font-size: x-small;
+      }
+      img {
         width: 100%;
       }
+      
     }
   </style>
 </head>
@@ -132,10 +177,10 @@
     <div class="left">
       <a href="/index.html">
         <img
-          src=".././JUXTAPOSERS.jpeg"
-          style="height: 200px"
-          alt="JUXTAPOSERS"
-        />
+            src="./JUXTAPOSERS.jpeg"
+            style="width: 200px; padding: 20px; "
+            alt="JUXTAPOSERS"
+          />
       </a>
 
       <div class="navbar">
@@ -144,51 +189,34 @@
     </div>
 
     <div class="row">
-      <div class="right">
+      <div class="main">
         <h1>what are you proudest of in 2022?</h1>
         <h3>we asked our friends to share with us... here's what you said:</h3>
       </div>
     </div>
   </div>
 
-  <!-- <div class="one" style="align-items: top">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfupQBbIUtgoFM02upTi0wkeAjRGW-yGVRGBAKSxr3ckv4RCQ/viewform?embedded=true"
-          opacity="40%"
-          width="400"
-          height="800"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
-      </div> -->
-
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     finally starting to live out my dream “college experience” 🥂✨
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="row" style="color: #100; padding-left: 60px; padding-right: 60px;">
+    Being friends with shannon kao bae (we ate cake)
   </div>
 
-  <div class="row" style="color: #100">
-    Being friends with shannon kao bae (we ate cake)
+  <div class="row" style="padding-top: 20px;">
     <img
       src="/what-are-you-proudest-of-in-2022-media/we-ate-cake.jpeg"
-      style="height: 400px; margin: 20px"
+      style="width: 80%;"
       `alt="we ate cake"
     />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
-
   <br />
   <br />
   <br />
@@ -196,7 +224,8 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">$25,000 trade profit</div>
+
+  <div class="row" style="color: #100; padding: 60px;">$25,000 trade profit</div>
   <br />
   <br />
   <br />
@@ -204,7 +233,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     Learning a new language and connecting more with my culture
   </div>
   <br />
@@ -214,7 +243,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     I am really proud of my myself for expanding my vision and creativity so
     that I can create photographs I am happy with :)
   </div>
@@ -225,12 +254,14 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="padding-bottom: 20px;">
     <img
-      src="/what-are-you-proudest-of-in-2022-media/made-it-another-year.jpeg"
-      style="height: 400px; margin: 20px"
-      `alt="i've made it through another year"
-    />
+        src="/what-are-you-proudest-of-in-2022-media/made-it-another-year.jpeg"
+        style="width: 100%;"
+        `alt="i've made it through another year"
+      />
+  </div>
+  <div class="row" style="color: #100; padding-left: 60px; padding-right: 60px;">
     surviving, despite an ongoing battle against suicidal thoughts & depression.
     i’ve made through another year and i’m proud of myself for that.
   </div>
@@ -241,7 +272,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">Getting the job of my dreams</div>
+  <div class="row" style="color: #100; padding: 60px;">Getting the job of my dreams</div>
   <br />
   <br />
   <br />
@@ -249,7 +280,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     started journalling and getting better at self-regulating!! better at
     solving interpersonal problems now:)
   </div>
@@ -260,7 +291,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     surrounding myself with people that genuinely make me happy and the growth
     that i have gained through loving myself
   </div>
@@ -271,7 +302,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     honestly just surviving the year; it’s been a crazy one:)
   </div>
   <br />
@@ -281,7 +312,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">learning to let myself be loved</div>
+  <div class="row" style="color: #100; padding: 60px;">learning to let myself be loved</div>
   <br />
   <br />
   <br />
@@ -289,33 +320,29 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     i’m proud of myself for getting hired in a positive workplace, and
     furthering my career &lt;3
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding-left: 60px; padding-right: 60px;">
     This illustration I mananged to make before the end of the year :)
-    <br />
+  </div>
+
+  <div class="row" style="padding-top: 20px">
     <img
-      src="/what-are-you-proudest-of-in-2022-media/year-end-illustration.jpg"
-      style="height: 400px; margin: 20px"
-      `alt="year end illustration"
+    src="/what-are-you-proudest-of-in-2022-media/year-end-illustration.jpg"
+    style="width: 80%;"
+    `alt="year end illustration"
     />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
-
+  
   <br />
   <br />
   <br />
@@ -323,66 +350,69 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     surviving galvanize co-op (my first internship)
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 
-  <div class="row" style="color: #100">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="row" style="color: #100; padding: 60px;">
     Travelling to 15 countries in 1 year
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 
-  <div class="row" style="color: #100">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div class="row" style="padding-bottom: 20px;">
     <img
       src="/what-are-you-proudest-of-in-2022-media/gym-journey.jpg"
-      style="height: 400px; margin: 20px"
+      style="width: 100%;"
       `alt="journey at the gym"
     />
-    Starting my journey at the gym and falling in love with it!
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  
+  <div class="row" style="color: #100; padding-left: 60px; padding-right: 60px;">
+    Starting my journey at the gym and falling in love with it!
+    </div>
 
-  <div class="row" style="color: #100">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+  <div class="row" style="color: #100; padding: 60px;">
     made a lot of space for myself and navigated to a much better relationship
     with myself and solitude. the first year in a long time where i felt like i
     stopped to smell the roses
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 
-  <div class="row" style="color: #100">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  
+  <div class="row" style="color: #100; padding-left: 60px; padding-right: 60px;">
     I'm proud of being able to help students learn more about careers in gaming
     through a conference called GameWorld that I created with UBC BizTech.
-    <br />
+  </div>
+
+  <div class="row" style="padding-top:20px;">
     <img
       src="/what-are-you-proudest-of-in-2022-media/gameworld.jpg"
-      style="height: 400px; margin: 20px"
+      style="width: 100%;"
       `alt="Gameworld with UBC BizTech"
     />
   </div>
@@ -393,7 +423,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">Spending time with the family.</div>
+  <div class="row" style="color: #100; padding: 60px;">Spending time with the family.</div>
   <br />
   <br />
   <br />
@@ -401,7 +431,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     proud of the growth i’ve made, the bridges i’ve burnt in my mind that bridge
     unhealthy past thoughts with the present
   </div>
@@ -412,7 +442,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="color: #100; padding: 60px;">
     meeting a lot of new people and enjoying sauder 🍾
   </div>
   <br />
@@ -422,7 +452,7 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">Improved my self confidence</div>
+  <div class="row" style="color: #100; padding: 60px;">Improved my self confidence</div>
   <br />
   <br />
   <br />
@@ -430,15 +460,18 @@
   <br />
   <br />
 
-  <div class="row" style="color: #100">
+  <div class="row" style="padding-bottom: 20px;">
     <img
       src="/what-are-you-proudest-of-in-2022-media/fighting-for-iran.jpeg"
-      style="height: 400px; margin: 20px"
+      style="width: 100%;" 
       `alt="fighting for Iran"
     />
-    <br />
+  </div>
+  
+  <div class="row" style="color: #100; padding-left: 60px; padding-right: 60px">
     Fighting for Iran
   </div>
+
   <br />
   <br />
   <br />
@@ -446,16 +479,19 @@
   <br />
   <br />
 
-  <div class="row">
+  <div class="row" style="text-align: center;">
     <h3>thanks for sharing with us, we're proud of you too</h3>
   </div>
 
-  <div class="row">
-    <body></body>
-  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
-  <div class="row" style="align-content: top">
-    <div class="main">
+  <div class="row" >
+    <div class="left">
       <div class="navbar"">
         <a style="font-weight:bold; font-style: italic; text-align: left;"
           href="https://forms.gle/w34HXyukRWVUCPNYA"
@@ -486,9 +522,12 @@
       <div class="navbar">
         <a href=".././playground.html">playground</a>
       </div>
+      
     </div>
-
   </div>
+
+  <br>
+
 
   <div class="footer">
     <p>2023</p>

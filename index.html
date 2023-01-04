@@ -1,157 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>JUXTAPOSERS</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="styles.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>JUXTAPOSERS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-/* Style the body */
-body {
-  font-family: 'Tahoma', sans-serif;
-  margin: 10;
-}
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #100;
+        margin: 10;
+      }
 
-.header {
-  padding: 40px;
-  text-align: left;
-  background: #FFF;
-  color: white;
-}
+      .header {
+        padding: 40px;
+        text-align: left;
+        background: #fff;
+        color: white;
+      }
 
-.header h1 {
-  font-size: 40px;
-}
+      .header h1 {
+        font-size: 40px;
+      }
 
-.navbar {
-  overflow: hidden;
-  background-color: #FFF;
-  padding: 10px 10px;
-}
+      .navbar {
+        overflow: hidden;
+        background-color: #fff;
+        padding: 10px 10px;
+      }
 
-.navbar a {
-  float: center;
-  display: outline;
-  color: grey;
-  text-align: center;
-  padding: 40px 40px;
-  text-decoration: none;
-}
+      .navbar a {
+        float: center;
+        display: outline;
+        color: grey;
+        text-align: center;
+        padding: 40px 40px;
+        text-decoration: none;
+      }
 
-.navbar a:hover {
-  color: black;
-}
+      .navbar a:hover {
+        color: black;
+      }
 
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
+      .stretch {
+        -ms-flex: 50%; /* IE10 */
+        flex: 0%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 0px;
+      }
 
-.main {
-  -ms-flex: 50%; /* IE10 */
-  flex: 0%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #FFF;
-  padding: 40px;
-}
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
 
-.left {   
-  -ms-flex: 50%; /* IE10 */
-  flex: 20%;
-  text-align: center;
-  background-color: white;
-  padding: 20px;
-}
+      .main {
+        -ms-flex: 50%; /* IE10 */
+        flex: 0%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 40px;
+      }
 
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #FFF;
-}
+      .left {
+        -ms-flex: 50%; /* IE10 */
+        flex: 20%;
+        text-align: center;
+        background-color: white;
+        padding: 20px;
+      }
 
-@media screen and (max-width: 200px) {
-  .left {   
-    shape-margin: 50%;
-    flex-direction: column;
-  }
-}
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #fff;
+      }
 
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-</head>
+      @media screen and (max-width: 200px) {
+        .left {
+          shape-margin: 50%;
+          flex-direction: column;
+        }
+      }
 
-<html>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
 
-  <div class="row">
+  <html>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <div class="main">
-      <br>
-      <h1>this is JUXTAPOSERS</h1> 
-      <h3>we do curations and creations.</h3>
-      <h3>anything for art.</h3>
-      
-
-      
+    <div class="row">
       <div class="main">
-        
-        <div class="navbar">
-          <a href="/zine.html">zine</a>  
+        <br />
+        <h1>this is JUXTAPOSERS</h1>
+        <h3>we do curations and creations.</h3>
+        <h3>anything for art.</h3>
+        <div class="stretch" style="align-content: center">
+          <div class="navbar">
+            <a
+              style="color: lightgrey; font-style: italic"
+              href="/what-are-you-proudest-of-in-2022.html"
+              >latest: what are you proudest of in 2022?</a
+            >
+          </div>
         </div>
-        
-        <div class="navbar">
-          <a href="/projects.html">projects</a>  
-        </div>
-          
-        <div class="navbar">
-          <a href="/journal.html">journal</a>  
-        </div>
-          
-        <div class="navbar">
-          <a href="/experiment.html">experiment</a>  
-        </div>
-        
-        <div class="navbar">
-          <a href="/playground.html">playground</a>  
+
+        <div class="main">
+          <div class="navbar">
+            <a href="/zine.html">zine</a>
+          </div>
+
+          <div class="navbar">
+            <a href="/projects.html">projects</a>
+          </div>
+
+          <div class="navbar">
+            <a href="/journal.html">journal</a>
+          </div>
+
+          <div class="navbar">
+            <a href="/experiment.html">experiment</a>
+          </div>
+
+          <div class="navbar">
+            <a href="/playground.html">playground</a>
+          </div>
+
+          <!-- <div class="stretch" style="align-content: center">
+            <div class="navbar">
+              <a href="/zine.html">latest: what are you proudest of in 2022?</a>
+            </div>
+          </div> -->
         </div>
       </div>
-      
-    </div>
 
-    <div class="left">
-      <centre> 
-        <a href="/index.html">
-          <img src="./JUXTAPOSERS.jpeg"  style="height:400px;"
-          alt="JUXTAPOSERS">
-        </a>
+      <div class="left">
+        <centre>
+          <a href="/index.html">
+            <img
+              src="./JUXTAPOSERS.jpeg"
+              style="height: 400px"
+              alt="JUXTAPOSERS"
+            />
+          </a>
         </centre>
+      </div>
     </div>
-  </div> 
-  
 
-  <div class="footer">
-    <p>2022</p>
-  </div>
-
-
+    <div class="footer">
+      <p>2023</p>
+    </div>
+  </html>
 </html>

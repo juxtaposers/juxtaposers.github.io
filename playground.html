@@ -1,100 +1,98 @@
 <style>
-    body {
-        font-family: 'Tahoma', sans-serif;
-        margin: 10;
-    }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #100;
+    margin: 10;
+  }
 
-    .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .left {
-        -ms-flex: 50%; /* IE10 */
-        flex: 20%;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
-        background-color: white;
-        padding: 20px;
-    }
+  .left {
+    -ms-flex: 50%; /* IE10 */
+    flex: 20%;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    background-color: white;
+    padding: 20px;
+  }
 
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0px 0px;
+  }
 
-    /* Style the top navigation bar */
-    .navbar {
-        overflow: hidden;
-        background-color: #FFF;
-        padding: 0px 0px;
-    }
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: outline;
+    color: grey;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
 
-    /* Style the navigation bar links */
-    .navbar a {
-        float: left;
-        display: outline;
-        color: grey;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
+  /* Change color on hover */
+  .navbar a:hover {
+    color: black;
+  }
 
-    /* Change color on hover */
-    .navbar a:hover {
-        color: black;
-    }
-
-    .footer {
-        padding: 20px;
-        text-align: center;
-        background: #FFF;
-    }
-
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+  }
 </style>
 
 <html>
-    <div class="row"> 
-        <div class="left"> 
-            <iframe src="https://openprocessing.org/sketch/1059150/embed/" style="width:50%; height: 600px;; align-self: center;"></iframe>
-        </div>
+  <div class="row">
+    <div class="left">
+      <iframe
+        src="https://openprocessing.org/sketch/1059150/embed/"
+        style="width: 50%; height: 600px; align-self: center"
+      ></iframe>
     </div>
-    
-    <div class="row">
-        <iframe src="https://openprocessing.org/sketch/1443355/embed/" width="600" height="600"></iframe> 
-        <!-- <h5 style="text-align: right; padding: 40px">this piece actually won us a hackathon</h5> -->
-    </div> 
+  </div>
 
+  <div class="row">
+    <iframe
+      src="https://openprocessing.org/sketch/1443355/embed/"
+      width="600"
+      height="600"
+    ></iframe>
+    <!-- <h5 style="text-align: right; padding: 40px">this piece actually won us a hackathon</h5> -->
+  </div>
 
-    
+  <div class="navbar">
+    <a href="/index.html">reorient me (home)</a>
+  </div>
 
+  <div class="navbar">
+    <a href="/zine.html">zine</a>
+  </div>
 
+  <div class="navbar">
+    <a href="/projects.html">projects</a>
+  </div>
 
-     <div class="navbar">
-        <a href="/index.html">reorient me (home)</a>  
-      </div>
+  <div class="navbar">
+    <a href="/journal.html">journal</a>
+  </div>
 
-      <div class="navbar">
-        <a href="/zine.html">zine</a>  
-      </div>
-      
-      <div class="navbar">
-        <a href="/projects.html">projects</a>  
-      </div>
-        
-       <div class="navbar">
-        <a href="/journal.html">journal</a>  
-      </div>
-        
-      <div class="navbar">
-        <a href="/experiment.html">experiment</a>  
-    </div>
+  <div class="navbar">
+    <a href="/experiment.html">experiment</a>
+  </div>
 
-    <div class="footer">
-        <p>2022</p>
-    </div>
-      
+  <div class="footer">
+    <p>2022</p>
+  </div>
 </html>
-
-
