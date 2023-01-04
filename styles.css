@@ -70,6 +70,16 @@ body {
   justify-content: center;
 }
 
+.stretch {
+  -ms-flex: 50%; /* IE10 */
+  flex: 0%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0px;
+}
+
 /* Main column */
 .main {
   width: 60%;
